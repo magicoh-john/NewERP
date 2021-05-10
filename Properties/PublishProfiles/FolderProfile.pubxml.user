@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\NewERP\Publish\Pilot</_PublishTargetUrl>
+    <History>True|2021-05-07T05:57:24.4977249Z;True|2021-05-06T22:38:08.2414413-07:00;True|2021-05-06T22:26:06.0081790-07:00;False|2021-05-06T22:24:49.6657607-07:00;True|2021-05-03T23:07:14.8303269-07:00;</History>
+  </PropertyGroup>
+</Project>

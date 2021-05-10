@@ -1,0 +1,326 @@
+﻿@{
+    ViewBag.Title = "FormStandard";
+}
+
+<style>
+    .label-class {
+        line-height: 37px;
+        vertical-align: middle;
+    }
+</style>
+
+<div class="content-heading">
+    <div>
+        전표입력
+        <small>회계관리 > 전표입력</small>
+    </div>
+</div>
+
+<!-- START card-->
+<div class="card card-mb3">
+    <div class="card-header"></div>
+    <div class="card-body">
+        <form>
+
+            <div class="form-group">
+                <!-- 첫번째줄 -->
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-sm-3" align="Right">
+                            <label class="label-class" for="invoice_id">
+                                회계일자
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" name="invoice_id" id="invoice_id" value="2021-05-10" />
+                        </div>
+                        <div class="col-md-3" align="Right">
+                            <label class="label-class" for="invoice_date">
+                                전표번호
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control date-picker" id="invoice_date" name="invoice_date" maxlength="10" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <!-- 두번째줄 -->
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <!-- DATATABLE DEMO 1-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title"></div>
+                                    <div class="text-sm"></div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-striped my-4 w-100" id="datatable1">
+                                        <thead>
+                                            <tr>
+                                                <th data-priority="1">번호</th>
+                                                <th>계정과목</th>
+                                                <th>차변</th>
+                                                <th>대변</th>
+                                                <th>적요</th>
+                                                <th>관련항목</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="gradeX">
+                                                <td>1</td>
+                                                <td>Internet Explorer 4.0</td>
+                                                <td>50,000</td>
+                                                <td></td>
+                                                <td>X</td>
+                                                <td>Win 95+</td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>2</td>
+                                                <td>Internet Explorer 5.0</td>
+                                                <td></td>
+                                                <td>50,000</td>
+                                                <td>C</td>
+                                                <td>Win 95+</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>3</td>
+                                                <td>Internet Explorer 5.5</td>
+                                                <td>100,000</td>
+                                                <td></td>
+                                                <td>A</td>
+                                                <td>Win 95+</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>4</td>
+                                                <td>Internet Explorer 6</td>
+                                                <td></td>
+                                                <td>100,000</td>
+                                                <td>A</td>
+                                                <td>Win 95+</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>5</td>
+                                                <td>Internet Explorer 7</td>
+                                                <td>20,000</td>
+                                                <td></td>
+                                                <td>A</td>
+                                                <td>Win 95+</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>6</td>
+                                                <td>AOL browser (AOL desktop)</td>
+                                                <td></td>
+                                                <td>20,000</td>
+                                                <td>A</td>
+                                                <td>Win 95+</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>7</td>
+                                                <td>Firefox 1.0</td>
+                                                <td>1,000,000</td>
+                                                <td></td>
+                                                <td>A</td>
+                                                <td>Win 95+</td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>8</td>
+                                                <td>Win 98+ / OSX.2+</td>
+                                                <td></td>
+                                                <td>1,000,000</td>
+                                                <td>A</td>
+                                                <td>Win 95+</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <!-- 세번째줄 -->
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-sm-3" align="Right">
+                            <label class="label-class" for="invoice_id">
+                                차변합계
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" name="invoice_id" id="invoice_id" value="1,170,000" />
+                        </div>
+                        <div class="col-md-3" align="Right">
+                            <label class="label-class" for="invoice_date">
+                                대변합계
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control date-picker" id="invoice_date" name="invoice_date" maxlength="10" value="1,170,000">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+
+            <fieldset>
+                <div align="center">
+                    <input type="submit" name="btnupdate" value="저장" onclick="return Update();" id="btnupdate" class="mb-1 btn btn-primary"> <!--btn-primary : 파랑색, btn-secondary : 흰색-->
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+</div>
+<!-- END card-->
+<!-- START card-->
+<div class="card card-default">
+    <div class="card-header"></div>
+    <div class="card-body">
+        <div class="container-fluid">
+            <!-- DATATABLE DEMO 1-->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title"></div>
+                    <div class="text-sm"></div>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped my-4 w-100" id="datatable1">
+                        <thead>
+                            <tr>
+                                <th data-priority="1">번호</th>
+                                <th>계정과목</th>
+                                <th>차변</th>
+                                <th>대변</th>
+                                <th>적요</th>
+                                <th>관련항목</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="gradeX">
+                                <td>1</td>
+                                <td>Internet Explorer 4.0</td>
+                                <td>50,000</td>
+                                <td></td>
+                                <td>X</td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr class="gradeC">
+                                <td>2</td>
+                                <td>Internet Explorer 5.0</td>
+                                <td></td>
+                                <td>50,000</td>
+                                <td>C</td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr class="gradeA">
+                                <td>3</td>
+                                <td>Internet Explorer 5.5</td>
+                                <td>100,000</td>
+                                <td></td>
+                                <td>A</td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr class="gradeA">
+                                <td>4</td>
+                                <td>Internet Explorer 6</td>
+                                <td></td>
+                                <td>100,000</td>
+                                <td>A</td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr class="gradeA">
+                                <td>5</td>
+                                <td>Internet Explorer 7</td>
+                                <td>20,000</td>
+                                <td></td>
+                                <td>A</td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr class="gradeA">
+                                <td>6</td>
+                                <td>AOL browser (AOL desktop)</td>
+                                <td></td>
+                                <td>20,000</td>
+                                <td>A</td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr class="gradeA">
+                                <td>7</td>
+                                <td>Firefox 1.0</td>
+                                <td>1,000,000</td>
+                                <td></td>
+                                <td>A</td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr class="gradeA">
+                                <td>8</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td></td>
+                                <td>1,000,000</td>
+                                <td>A</td>
+                                <td>Win 95+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END card-->
+<!-- START card-->
+<div class="card card-mb3">
+    <div class="card-header">Inline form</div>
+    <div class="card-body">
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">차변합계</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="1,170,000">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">대변합계</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="1,170,000">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- END card-->
+
+@section Styles {
+
+}
+@section Scripts {
+
+}
+

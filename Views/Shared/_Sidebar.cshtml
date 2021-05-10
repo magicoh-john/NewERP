@@ -1,0 +1,221 @@
+<!-- START Sidebar (left)-->
+<div class="aside-inner">
+    <nav class="sidebar" data-sidebar-anyclick-close="">
+        <!-- START sidebar nav-->
+        <ul class="sidebar-nav">
+            <!-- START user info-->
+            <li class="has-user-block">
+                <div id="user-block" class="collapse">
+                    <div class="item user-block">
+                        <!-- User picture-->
+                        <div class="user-block-picture">
+                            <div class="user-block-status">
+                                <img src="~/images/user/02.jpg" alt="Avatar" width="60" height="60" class="img-thumbnail rounded-circle" />
+                                <div class="circle bg-success circle-lg"></div>
+                            </div>
+                        </div>
+                        <!-- Name and Job-->
+                        <div class="user-block-info">
+                            <span class="user-block-name">Hello, Mike</span>
+                            <span class="user-block-role">Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- END user info-->
+            <!-- Iterates over all sidebar items-->
+            @*<li class="nav-heading">
+            <span>관리자</span>
+        </li>
+        <li class="@Html.isActive(controller: "기준정보")">
+            <a href="#기준정보" title="" data-toggle="collapse">
+                <div class="badge badge-info float-right">3</div>
+                <em class="icon-speedometer"></em>
+                <span data-localize="sidebar.nav.BASIC">기준정보</span>
+            </a>
+            <ul id="기준정보" class="sidebar-nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">기준정보</li>
+                <li class="@Html.isActive("기준정보", "회사정보")">
+                    <a href="@Url.Action("회사정보", "기준정보")" title="">
+                        <span>회사 정보</span>
+                    </a>
+                </li>
+                <li class="@Html.isActive("기준정보", "계정정보")">
+                    <a href="@Url.Action("계정정보", "기준정보")" title="">
+                        <span>계정 정보</span>
+                    </a>
+                </li>
+                <li class="@Html.isActive("기준정보", "거래처정보")">
+                    <a href="@Url.Action("거래처정보", "기준정보")" title="">
+                        <span>거래처 정보</span>
+                    </a>
+                </li>
+            </ul>
+        </li>*@
+            <li class="nav-heading">
+                <span>회계관리</span>
+            </li>
+            <!------------>
+            <!--기준정보-->
+            <!------------>
+            <li class="@Html.isActive(controller: "기준정보")">
+                <a href="#기준정보" title="" data-toggle="collapse">
+                    <!--<div class="badge badge-info float-right">3</div>-->
+                    <em class="icon-compass"></em>
+                    <span data-localize="sidebar.nav.BASIC">기준정보</span>
+                </a>
+                <ul id="기준정보" class="sidebar-nav sidebar-subnav collapse">
+                    <li class="sidebar-subnav-header">기준정보</li>
+                    <li class="@Html.isActive("기준정보", "회사정보")">
+                        <a href="@Url.Action("회사정보", "기준정보")" title="">
+                            <span>회사 정보</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("기준정보", "계정정보")">
+                        <a href="@Url.Action("계정정보", "기준정보")" title="">
+                            <span>계정 정보</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("기준정보", "거래처정보")">
+                        <a href="@Url.Action("거래처정보", "기준정보")" title="">
+                            <span>거래처 정보</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!------------>
+            <!--전표관리-->
+            <!------------>
+            <li class="@Html.isActive(controller: "Statement")">
+                <a href="#전표관리" title="" data-toggle="collapse">
+                    <em class="icon-note"></em>
+                    <span data-localize="sidebar.nav.BASIC">전표관리</span>
+                </a>
+                <ul id="전표관리" class="sidebar-nav sidebar-subnav collapse">
+                    <li class="sidebar-subnav-header">전표관리</li>
+                    <li class="@Html.isActive("Statement", "StatementRegister")">
+                        <a href="@Url.Action("StatementRegister", "Statement")" title="">
+                            <span>전표 처리</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("전표관리", "일괄등록")">
+                        <a href="@Url.Action("일괄등록", "전표관리")" title="">
+                            <span>일괄 등록</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("전표관리", "기초등록")">
+                        <a href="@Url.Action("기초등록", "전표관리")" title="">
+                            <span>기초 등록</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!------------>
+            <!--매출관리-->
+            <!------------>
+            <li class="@Html.isActive(controller: "매출관리")">
+                <a href="#매출관리" title="" data-toggle="collapse">
+                    <em class="icon-logout"></em>
+                    <span data-localize="sidebar.nav.BASIC">매출관리</span>
+                </a>
+                <ul id="매출관리" class="sidebar-nav sidebar-subnav collapse">
+                    <li class="sidebar-subnav-header">매출관리</li>
+                    <li class="@Html.isActive("매출관리", "인보이스등록")">
+                        <a href="@Url.Action("인보이스등록", "매출관리")" title="">
+                            <span>인보이스 등록</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("매출관리", "입금등록")">
+                        <a href="@Url.Action("입금등록", "매출관리")" title="">
+                            <span>입금 등록</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("매출관리", "ARAging관리")">
+                        <a href="@Url.Action("ARAging관리", "매출관리")" title="">
+                            <span>AR Aging 관리</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!------------>
+            <!--매입관리-->
+            <!------------>
+            <li class="@Html.isActive(controller: "매입관리")">
+                <a href="#매입관리" title="" data-toggle="collapse">
+                    <em class="icon-login"></em>
+                    <span data-localize="sidebar.nav.BASIC">매입관리</span>
+                </a>
+                <ul id="매입관리" class="sidebar-nav sidebar-subnav collapse">
+                    <li class="sidebar-subnav-header">매입관리</li>
+                    <li class="@Html.isActive("매입관리", "구매내역등록")">
+                        <a href="@Url.Action("구매내역등록", "매입관리")" title="">
+                            <span>구매내역 등록</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("매입관리", "출금등록")">
+                        <a href="@Url.Action("출금등록", "매입관리")" title="">
+                            <span>출금 등록</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!------------>
+            <!--재무제표-->
+            <!------------>
+            <li class="@Html.isActive(controller: "재무제표")">
+                <a href="#재무제표" title="" data-toggle="collapse">
+                    <em class="icon-chart"></em>
+                    <span data-localize="sidebar.nav.BASIC">재무제표</span>
+                </a>
+                <ul id="재무제표" class="sidebar-nav sidebar-subnav collapse">
+                    <li class="sidebar-subnav-header">재무제표</li>
+                    <li class="@Html.isActive("재무제표", "손익계산서")">
+                        <a href="@Url.Action("손익계산서", "재무제표")" title="">
+                            <span>손익계산서</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("재무제표", "대차대조표")">
+                        <a href="@Url.Action("대차대조표", "재무제표")" title="">
+                            <span>대차대조표</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("재무제표", "시산표")">
+                        <a href="@Url.Action("시산표", "재무제표")" title="">
+                            <span>시산표</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!------------>
+            <!--결산관리-->
+            <!------------>
+            <li class="@Html.isActive(controller: "결산관리")">
+                <a href="#결산관리" title="" data-toggle="collapse">
+                    <em class="icon-pin"></em>
+                    <span data-localize="sidebar.nav.BASIC">결산관리</span>
+                </a>
+                <ul id="결산관리" class="sidebar-nav sidebar-subnav collapse">
+                    <li class="sidebar-subnav-header">결산관리</li>
+                    <li class="@Html.isActive("결산관리", "결산마감")">
+                        <a href="@Url.Action("결산마감", "결산관리")" title="">
+                            <span>결산 마감</span>
+                        </a>
+                    </li>
+                    <li class="@Html.isActive("결산관리", "마감취소")">
+                        <a href="@Url.Action("마감취소", "결산관리")" title="">
+                            <span>마감 취소</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- END sidebar nav-->
+    </nav>
+</div>
+<!-- END Sidebar (left)-->
+
+
